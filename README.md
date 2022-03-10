@@ -1,3 +1,3 @@
-# factory-pattern-references
+# factory-pattern-basic
 
-an example implementation of the factory pattern based on java method references (as opposed to lambda or anonymous classes
+the most basic factory pattern
