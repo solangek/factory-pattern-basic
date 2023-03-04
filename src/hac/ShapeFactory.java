@@ -5,7 +5,9 @@ package hac;
  * question: what happen when we want to add a new shape?
  * answer: we need to add a new shape to the factory and change the code.
  * How can we write a factory that won't change when we add a new shape?
- * answer: we can use a Map to store the shape. See the other examples in this repo.
+ * answer: we can use a Map to store the shape.
+ * See the other (better) example:
+ * https://github.com/solangek/factory-pattern-references
  */
 public class ShapeFactory {
 
