@@ -2,12 +2,11 @@ package hac;
 
 /**
  * ShapeFactory is a factory for creating shapes.
- * question: what happen when we want to add a new shape?
- * answer: we need to add a new shape to the factory and change the code.
- * How can we write a factory that won't change when we add a new shape?
- * answer: we can use a Map to store the shape.
- * See the other (better) example:
- * https://github.com/solangek/factory-pattern-references
+ * questions: what happen when we want to add a new shape?
+ *          answer: we need to add a new shape to the factory and change the code.
+ *          How can we write a factory that won't change when we add a new shape?
+ *          answer: we can use a Map to store the shape.
+ * See the <a href="https://github.com/solangek/factory-pattern-references">other (better) example</a>.
  */
 public class ShapeFactory {
 
@@ -15,13 +14,13 @@ public class ShapeFactory {
         if(shapeType == null)
             return null;
 
-        if(shapeType.equalsIgnoreCase("CIRCLE"))
+        if(shapeType.equalsIgnoreCase(Shape.CIRCLE))
             return new Circle();
 
-        else if(shapeType.equalsIgnoreCase("RECTANGLE"))
+        else if(shapeType.equalsIgnoreCase(Shape.RECTANGLE))
             return new Rectangle();
 
-        else if(shapeType.equalsIgnoreCase("TRIANGLE"))
+        else if(shapeType.equalsIgnoreCase(Shape.TRIANGLE))
             return new Triangle();
 
         return null;
